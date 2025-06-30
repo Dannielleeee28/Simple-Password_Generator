@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Dannielle">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/DMBLogo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img src="assets/images/DMBTransparent.png" alt="DMB Logo">
+            <h1>Simple Password Generator</h1>
+            <a href="https://github.com/Dannielleeee28" target="_blank">Github</a>
+        </div>
+    </header>
+    <main>
+        <h2 id="generatedPassword-box">davepogi123</h2>
+        <div class="passwordLength">
+           <input type="number" id="passwordLength" placeholder="Password length">   
+        </div>
+        <div class="preferences">
+            <input type="checkbox" name="lowerCase" id="lowerCase">
+            <label for="lowerCase">Lowercase Letters</label>
+
+            <input type="checkbox" name="upperCase" id="upperCase">
+            <label for="upperCase">Uppercase Letters</label>
+
+            <input type="checkbox" name="numbers" id="numbers">
+            <label for="numbers">Numbers</label>
+            
+            <input type="checkbox" name="symbols" id="symbols">
+            <label for="symbols">Symbols</label>
+        </div>
+        <div class="button">
+            <button onclick="generatePassword()">Generate Password</button>
+        </div>
+    </main>
+    <footer>
+        <h4>2025&copy; Dannielle Marvic H. Banaban</h4>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
